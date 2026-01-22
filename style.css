@@ -1,0 +1,364 @@
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* HEADER */
+.header {
+    background: rgba(25,118,210,0.85);
+    padding: 15px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 70px;
+    margin-right: 15px;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+}
+
+.header p {
+    color: #e3f2fd;
+    margin: 5px 0 0;
+}
+
+/* MENU */
+.menu {
+    background: rgba(198,40,40,0.9);
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* SEARCH */
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+/* SOCIAL BUTTONS */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.facebook { background: #355ee5; }
+.whatsapp { background: #43a047; }
+.telegram { background: #5ccc00; }
+
+/* BOX SECTION */
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.list-box{
+  background: rgba(255,255,255,0.95);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.list-title{
+  background: #1976d2;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list-links{
+  padding: 15px;
+}
+
+.list-links li{
+  margin-bottom: 8px;
+}
+
+.list-links a{
+  text-decoration: none;
+  color: #000;
+}
+
+.list-links a:hover{
+  color: #1976d2;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+  background: #ffffff;
+  margin: 30px 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  color: red;
+}
+
+/* FOOTER */
+.footer{
+  background: #0a4aa6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 30px 20px 0;
+}
+
+/* MAIN TOPIC BOXES */
+.main-topics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.topic-box {
+    background: #56e51e;
+    color: rgba(19, 13, 13, 0.993);
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+.topic-box span {
+    display: block;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+/* ================= BUTTON STYLE ================= */
+
+.list-box{
+  border: 1px solid #b5d6ea;
+  background: #ffffff;
+  margin: 15px 0;
+}
+
+.list-title{
+  background: #1e88e5;
+  color: #ffffff;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-links li{
+  border-bottom: 1px solid #dbe9f3;
+}
+
+.list-links li a{
+  display: block;
+  padding: 7px 10px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.list-links li a:hover{
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
+.view-more{
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.view-more a{
+  display: inline-block;
+  background: #1976d2;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.view-more a:hover{
+  background: #125aa3;
+}
+
+/* ===== Floating WhatsApp Button (FIXED) ===== */
+.whatsapp-float{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  z-index: 999999; /* MOST IMPORTANT */
+}
+
+.whatsapp-float:hover{
+  background-color: #1ebe5d;
+}
+
+/* ===== ARTICLE CONTENT STYLE ===== */
+
+.article-content{
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 6px;
+  line-height: 1.7;
+}
+
+.article-content h2{
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.article-content ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.article-content li{
+  margin-bottom: 20px;
+}
+
+.article-content li strong{
+  color: #0d47a1;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.article-content p{
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+/* ===== ABOUT AUTHOR SINGLE BOX ===== */
+
+.about-author-box{
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 40px 0;
+}
+
+.about-heading{
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.about-author-content{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.author-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info h3{
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #1976d2;
+}
+
+.author-info p{
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.author-social a{
+  margin-right: 12px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.author-social a:hover{
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .about-author-content{
+    flex-direction: column;
+    text-align: center;
+  }
+  .author-img{
+    margin: 0 auto;
+  }
+}
+/* ===== FORCE WHITE BACKGROUND FIX ===== */
+
+
+/* about author full box */
+.about-author,
+.about-author-box{
+  background: #ffffff !important;
+}
