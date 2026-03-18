@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10LCHVF1DV"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -19,9 +19,8 @@
     <meta name="keywords" content="RGA Digital Seva, Sarkari Yojana, Admit Card, Result, Bihar Updates">
 
     <meta name="robots" content="index, follow">
-   
+
     <link rel="canonical" href="https://rgadigitalseva.in/">
-    <link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -80,6 +79,7 @@
         जाति, निवास, आय प्रमाण पत्र<br>
         <span>APPLY & DOWNLOAD</span>
     </a>
+  
 
     <a href="ration-card.html" class="topic-box">
         बिहार राशन कार्ड 2026<br>
@@ -118,6 +118,7 @@
     <div class="list-box">
       <div class="list-title">Latest Update</div>
       <ul class="list-links">
+
         <li><a href="pm-awas-yojana.html">PM Awas Yojana Online Apply 2026 – पीएम आवास योजना</a></li>
         <li><a href="bihar-farmer-id.html">Bihar Farmer ID Kaise Download Kare – बिहार फार्मर आईडी</a></li>
         <li><a href="ctet-exam-city-admit-card.html">CTET EXAM CITY AND ADMIT CARD Dawnload 2026</a></li>
@@ -135,8 +136,9 @@
       <div class="list-title">Latest Jobs</div>
       <ul class="list-links">
         <li><a href="india-post-gds-vacancy-2026.html">India Post GDS Vacancy 2026 Apply Online</a></li>
+        <li><a href="#">Police Constable Vacancy</a></li>
         <li><a href="#">Bank Clerk Recruitment</a></li>
-        <li><a href="railway-group-d-2026.html">RRB Group D Vacancy 2026</a></li>
+        <li><a href="railway-group-d-2025.html">RRB Group D Vacancy 2026</a></li>
         <li><a href="#">Army Rally Bharti</a></li>
       </ul>
       <!-- VIEW MORE BUTTON -->
@@ -158,7 +160,12 @@
         <div class="view-more">
         <a href="sarkari-yojana.html">View More</a>
         </div>
-        <div class="home-grid">
+
+    </div>
+
+
+  </div> <!-- home-grid end -->
+  <div class="home-grid">
 
   <!-- Admit Card -->
   <div class="list-box">
@@ -199,10 +206,11 @@
     </ul>
     <div class="view-more">
       <a href="important.html">View More</a>
-</div>
-</div> <!-- home-grid end -->
+    </div>
+  </div>
 
-</div> <!-- container end -->
+
+</div>
 <!-- ================= DISCLAIMER ================= -->
 
 <div class="disclaimer">
@@ -259,7 +267,7 @@
   </div>
 
   <p>Copyright © 2026 RGA DIGITAL SEVA | All Rights Reserved
-Content id for informational Purpose only.</p>
+ Content id for informational Purpose only.</p>
 
 </div>
 
@@ -287,19 +295,31 @@ document.getElementById("searchInput").addEventListener("keyup", function () {
    💬 Join WhatsApp Group
 </a>
 
+<script>
+function searchFunction() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let items = document.querySelectorAll(".list-links li");
+
+  items.forEach(function(item) {
+    let text = item.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+<script>
+document.getElementById("searchInput").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    searchFunction();
+  }
+});
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
