@@ -473,3 +473,15 @@ margin-bottom:10px;
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* HEADER normal रहेगा */
+.header {
+  position: relative;
+}
+
+/* MENU sticky रहेगा */
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
