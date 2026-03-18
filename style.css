@@ -91,7 +91,7 @@ body{
 
 .home-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -147,7 +147,7 @@ body{
 /* MAIN TOPIC BOXES */
 .main-topics {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 20px;
 }
@@ -362,6 +362,93 @@ body{
 .about-author-box{
   background: #ffffff !important;
 }
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px){
+
+.home-grid{
+grid-template-columns: 1fr;
+}
+
+.main-topics{
+grid-template-columns: 1fr;
+}
+
+.search-box input{
+width:90%;
+}
+
+.menu a{
+display:block;
+margin:8px 0;
+}
+
+.header-inner{
+flex-direction:column;
+}
+
+.logo{
+margin-bottom:10px;
+}
+
+}
+
+.view-more {
+  text-align: center;
+  padding: 10px;
+}
+
+.view-more a {
+  background: #1976d2;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.view-more a:hover {
+  background: #125ea8;
+}
+
+/* ===== SEARCH BOX ===== */
+.search-box {
+  display: flex;
+  justify-content: center;   /* 👈 center में लाएगा */
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* input field */
+.search-box input {
+  width: 350px;              /* 👈 बड़ा */
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+/* button */
+.search-box button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #0d6efd;      /* 🔵 blue color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* hover effect */
+.search-box button:hover {
+  background: #084298;
+}
+
 
 /* ===== FOOTER ===== */
 .footer {
