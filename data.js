@@ -8,7 +8,7 @@ let data = [
   },
   {
     name: "TEC Certificate Exam",
-    link: "https://www.cscentrepreneur.in/register",
+    link: "tec-certificate-ragistration-2026.html",
     img: "images/logo.png"
   },
   {
@@ -26,7 +26,7 @@ let data = [
   {
     name: "PM Awas Yojana Online Apply 2026",
     link: "pm-awas-yojana.html",
-    img: "images/banner.jpg"
+    img: "images/banner1.jpg"
   },
   {
     name: "Bihar Farmer ID Download",
@@ -36,24 +36,24 @@ let data = [
   {
     name: "CTET Admit Card 2026",
     link: "ctet-exam-city-admit-card.html",
-    img: "images/logo.png"
+    img: "images/banner4.jpeg"
   },
   {
     name: "PAN Aadhaar Link 2026",
     link: "pan-aadhaar-link.html",
-    img: "images/logo.png"
+    img: "images/banner5.jpeg"
   },
   {
     name: "UP BEd Online Form 2026",
     link: "up-bed-online-form-2026.html",
-    img: "images/logo.png"
+    img: "images/banner-up-bed-online-2026.jpeg"
   },
 
   // ===== JOBS =====
   {
     name: "India Post GDS Vacancy 2026",
     link: "india-post-gds-vacancy-2026.html",
-    img: "images/logo.png"
+    img: "images/banner-post-gds-2026.jpeg"
   },
   {
     name: "RRB Group D Vacancy 2026",
