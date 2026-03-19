@@ -14,7 +14,7 @@ let data = [
   {
     name: "Ration Card Bihar 2026",
     link: "ration-card.html",
-    img: "images/logo.png"
+    img: "images/banner2.jpeg"
   },
   {
     name: "Bihar Post Matric Scholarship",
