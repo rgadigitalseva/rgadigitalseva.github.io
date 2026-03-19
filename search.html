@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Search Result</title>
+
+<!-- data.js -->
+<script src="data.js"></script>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.result-box {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.result-box img {
+  width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.result-text a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.result-text a:hover {
+  color: #1976d2;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2 id="title"></h2>
+<div id="results"></div>
+
+<script>
+
+// 🔍 search keyword
+let params = new URLSearchParams(window.location.search);
+let query = params.get("q");
+
+// title
+if (!query) {
+  document.getElementById("title").innerText = "Please enter something to search";
+} else {
+  document.getElementById("title").innerText = "Search Results for: " + query;
+}
+
+// result box
+let resultBox = document.getElementById("results");
+
+// search logic
+data.forEach(item => {
+
+  if(query && item.name.toLowerCase().includes(query.toLowerCase())) {
+
+    let div = document.createElement("div");
+    div.className = "result-box";
+
+    div.innerHTML = `
+      <img src="${item.img}">
+      <div class="result-text">
+        <a href="${item.link}">${item.name}</a>
+      </div>
+    `;
+
+    resultBox.appendChild(div);
+  }
+});
+
+// no result
+if(resultBox.innerHTML === "" && query){
+  resultBox.innerHTML = "<p>No results found</p>";
+}
+
+</script>
+
+</body>
+</html>
