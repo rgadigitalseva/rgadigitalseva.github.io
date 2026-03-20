@@ -122,7 +122,6 @@ body{
 .list-links a:hover{
   color: #1976d2;
 }
-
 /* DISCLAIMER */
 .disclaimer{
   background: none;
@@ -130,7 +129,7 @@ body{
   box-shadow: none;
   padding: 0;
   margin: 20px 0;
-  color: #333;
+  color: #f00707;
 }
 
 /* FOOTER */
