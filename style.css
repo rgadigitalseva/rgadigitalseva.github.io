@@ -125,11 +125,12 @@ body{
 
 /* DISCLAIMER */
 .disclaimer{
-  background: #ffffff;
-  margin: 30px 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  color: red;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #333;
 }
 
 /* FOOTER */
@@ -481,4 +482,25 @@ margin-bottom:10px;
   position: sticky;
   top: 0;
   z-index: 999;
+}
+
+.info-section{
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.info-section h3{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-section ul{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.info-section li{
+  margin-bottom: 10px;
+  line-height: 1.7;
 }
