@@ -601,3 +601,26 @@ margin-bottom:10px;
 .sidebar-scroll::-webkit-scrollbar-thumb {
   background: #007bff;
 }
+
+
+.content img {
+  max-width: 100%;   /* पूरा box में फिट */
+  height: auto;      /* proportion सही रहेगा */
+  display: block;
+  margin: 10px auto; /* center */
+  border-radius: 6px;
+}
+
+.content img {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.form-img {
+  width: 100%;
+  max-width: 600px;   /* size control */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
+}
