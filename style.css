@@ -248,7 +248,7 @@ body{
 }
 .whatsapp-float2{
   position: fixed;
-  right: 15px;
+  bottom: 10px;
   bottom: 110px;
   background-color: #25D366;
   color: #fff;
