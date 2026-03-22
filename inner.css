@@ -1,0 +1,406 @@
+/* RESET */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+}
+
+/* HEADER */
+.header {
+    background: rgba(25,118,210,0.85);
+    padding: 15px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER WIDTH FIX */
+.header {
+  max-width: 1200px;
+  margin: 0 auto;   /* center */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* MENU WIDTH FIX */
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;   /* center */
+  border-radius: 0 0 8px 8px;
+}
+
+.logo {
+    height: 150px;
+    margin-right: 15px;
+}
+.header img{
+  height: 110px;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+}
+
+.header p {
+    color: #e3f2fd;
+    margin: 5px 0 0;
+}
+
+/* MENU */
+.menu {
+    background: rgba(198,40,40,0.9);
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* MAIN LAYOUT */
+.inner-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* 🔥 FIX */
+.content {
+  flex: 2;   /* पहले 70% था */
+}
+
+.sidebar {
+  flex: 1;   /* पहले 30% था */
+}
+.list-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* BOX */
+.list-box {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.list-title {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* LIST */
+.list-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-links li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .inner-container {
+    flex-direction: column;
+  }
+
+  .content,
+  .sidebar {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* SIDEBAR MAIN */
+.sidebar {
+  width: 30%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* HEADING */
+.sidebar h3 {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: #fff;
+  padding: 12px;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* LIST RESET */
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+/* 🔥 MAIN FIX HERE */
+.sidebar ul li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* LINK */
+.sidebar ul li a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* HOVER */
+.sidebar ul li:hover {
+  background: #eaf3ff;
+  transform: translateX(5px);
+}
+
+.sidebar ul li a:hover {
+  color: #007bff;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  background: none;
+}
+
+/* layout */
+.main-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* content */
+.content {
+  width: 70%;
+}
+
+/* sidebar FIX */
+.sidebar {
+  width: 30%;
+  position: sticky;
+  top: 20px;   /* ऊपर से gap */
+  height: fit-content;
+}
+
+/* scroll area */
+.sidebar-scroll {
+  max-height: 400px;   /* यहाँ control */
+  overflow-y: auto;
+}
+
+/* scrollbar style (optional 🔥) */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #007bff;
+}
+
+.list-links li a {
+  font-size: 14px;
+  font-weight: 400;     /* normal रखो */
+  color: #222;          /* dark clean color */
+  text-decoration: none;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-links li {
+  padding: 6px 0;
+}
+
+.list-links li a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.list-box {
+  background: #fff;
+  border-radius: 6px;
+}
+
+.list-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+.list-links li {
+  background: #f1f5f9;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.list-links li a {
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  line-height: 1.5;
+}
+
+/* HOVER EFFECT */
+.list-links li:hover {
+  background: #dbeafe;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #f00707;
+}
+
+/* FOOTER */
+.footer{
+  background: #0a4aa6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 30px 20px 0;
+}
+
+
+
+
+
+
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== ABOUT AUTHOR SINGLE BOX ===== */
+
+.about-author-box{
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 40px 0;
+}
+
+.about-heading{
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.about-author-content{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.author-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info h3{
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #1976d2;
+}
+
+.author-info p{
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.author-social a{
+  margin-right: 12px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.author-social a:hover{
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px){
+  .about-author-content{
+    flex-direction: column;
+    text-align: center;
+  }
+  .author-img{
+    margin: 0 auto;
+  }
+}
+/* ===== FORCE WHITE BACKGROUND FIX ===== */
+
+
+/* about author full box */
+.about-author,
+.about-author-box{
+  background: #ffffff !important;
+}
+
+
+
+
