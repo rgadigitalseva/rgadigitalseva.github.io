@@ -404,3 +404,32 @@ body {
 
 
 
+.whatsapp-float{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  z-index: 999999; /* MOST IMPORTANT */
+}
+
+.whatsapp-float:hover{
+  background-color: #1ebe5d;
+}
+.telegram-float{
+  position: fixed;
+  right: 15px;
+  bottom: 60px;   /* ऊपर */
+  background: #0088cc;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  z-index: 999999;
+}
