@@ -26,6 +26,15 @@
    <link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png">
 
     <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "61891ce9-f1ce-496b-9531-16d1ebd1fe65",
+    });
+  });
+</script>
 </head>
 
 <body>
